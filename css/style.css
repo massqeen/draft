@@ -24,7 +24,6 @@ dd {
   margin: 0;
   padding: 0;
 } /*почему этот блок обнуляет стилизацию списка? */
-@import 'normalize.css';
 @import 'imported.css';
 ul {
   background-color: #cdcf5a;
