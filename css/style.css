@@ -1,35 +1,14 @@
-/* Убираем внутренние отступы
-ul[class],
-ol[class] {
+* {
+  margin: 1px;
   padding: 0;
 }
-Убираем внешние отступы
-body,
-h1,
-h2,
-h3,
-h4,
-p,
-ul[class],
-ol[class],
-li,
-figure,
-figcaption,
-blockquote,
-dl,
-dd {
-  margin: 0;
-}  */
-* {
-  margin: 0;
-  padding: 0;
-} /*почему этот блок обнуляет стилизацию списка? */
-@import 'imported.css';
+@import "css/imported.css";
 ul {
   background-color: #cdcf5a;
 }
-li {
-  list-style: square;
+ul {
+  list-style: circle;
+  list-style-position: inside;
 }
 p {
   color: red;
