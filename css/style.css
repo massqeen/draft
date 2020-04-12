@@ -1,34 +1,46 @@
-* {
-  margin: 1px;
-  padding: 0;
+.grid {
+  display: grid;
+  max-width: 1200px;
+  margin: 0 auto;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: minmax(100px, auto);
+  grid-gap: 10px;
+  grid-template-areas:
+    'header nav nav nav'
+    'aside main main main'
+    'aside main main main'
+    'footer footer footer footer';
 }
-@import 'css/imported.css';
-ul {
-  background-color: #cdcf5a;
+
+.header {
+  grid-area: header;
+  display: grid;
+  align-items: center;
 }
-ul {
-  list-style: circle;
-  list-style-position: inside;
+
+.nav {
+  grid-area: nav;
 }
-p {
-  color: red;
-  width: 400px;
-  height: 400px;
-  background: url(pattern.jpg) repeat;
+
+.main {
+  grid-area: main;
 }
-.box1 {
-  margin-bottom: 40px;
-  width: 400px;
-  height: 200px;
-  background-color: turquoise;
-  padding: 10px 10px 10px 10px;
-  border: 2px solid blue;
-  border-radius: 6px;
+
+.aside {
+  grid-area: aside;
 }
-.box2 {
-  width: 400px;
-  height: 200px;
-  background-color: yellow;
-  font-family: 'Arial', Helvetica, sans-serif;
-  text-decoration-line: line-through;
+
+.footer {
+  grid-area: footer;
+}
+
+.item {
+  display: grid;
+  align-items: center;
+  background-color: #2a2dfd;
+  color: white;
+  font-size: 20px;
+  justify-items: center;
+  padding: 20px;
+  text-transform: uppercase;
 }
