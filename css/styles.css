@@ -153,9 +153,6 @@ body {
   justify-content: space-between; */
 }
 
-.navigation__list-item {
-}
-
 .navigation__list-item:not(:last-child) {
   margin-right: 34px;
 }
@@ -369,9 +366,6 @@ body {
   display: flex;
 }
 
-.overlay__list-item {
-}
-
 .overlay__list-link {
   display: block;
   width: 28px;
@@ -440,9 +434,6 @@ body {
   margin: 0 auto;
   margin-bottom: 70px;
   display: flex;
-}
-
-.tabs-list__item {
 }
 
 .tabs-list__btn {
